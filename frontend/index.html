@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Sumit Nautiyal- Web Developer,Programmer,ML Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d4b67302f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container cc">
+            <nav>
+                <img src="images.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="typing-text"></p>
+                <h1>Hi, I'm <span>Sumit</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Sumit Nautiyal Photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Sumit Nautiyal – a passionate Web Developer, Competitive Programmer, and Machine Learning
+                        Enthusiast from India. I love building smart, user-friendly web applications and exploring the
+                        potential of AI and data-driven solutions. With hands-on experience in C++, Java, Python, and
+                        modern web technologies, I strive to create projects that are not only functional but also make
+                        a real impact.
+
+                        I enjoy solving challenging problems, learning new technologies, and sharing knowledge with the
+                        community. My portfolio showcases my projects in web development, AI/ML, and competitive
+                        programming, reflecting my journey of continuous learning and innovation.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active" onclick="opentab('coding-profiles')">My Coding Profiles</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++/C</span> <br>Competitive Progammer</li>
+                            <li><span>Web Development</span> <br>Web Development</li>
+                            <li><span>Machine Learning</span> <br>ML Enthusiast</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active" id="coding-profiles">
+                        <ul>
+                            <li>
+                                <span>LeetCode</span> <br>
+                                <a href="https://leetcode.com/sumitnautiyal681"
+                                    style="text-decoration: none; color: inherit;">sumitnautiyal681</a>
+                            </li>
+                            <li>
+                                <span>Codeforces</span> <br>
+                                <a href="https://codeforces.com/profile/sumitnautiyal681"
+                                    style="text-decoration: none; color: inherit;">sumitnautiyal681</a>
+                            </li>
+                            <li>
+                                <span>CodeChef</span> <br>
+                                <a href="https://www.codechef.com/users/sumit780"
+                                    style="text-decoration: none; color: inherit;">sumit780</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span> <br>B.Tech/CSE at Graphic Era Hill University
+                            <li>
+                            <li><span>2019-2021</span> <br>Intermediate at Sant Kabeer Academy, Dehradun</li>
+                            <li><span>2019-2021</span> <br>High School at APS, Ranikhet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="MediAid.png">
+                    <div class="layer">
+                        <h3>Disease Prediction Model</h3>
+                        <p>MediAid is a smart healthcare solution designed to make medical support more accessible and
+                            efficient. The platform integrates AI-driven disease prediction, doctor appointment booking,
+                            and video consultation features into a single user-friendly application. Built using modern
+                            web technologies and machine learning models.</p>
+
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="disease prediction.jpg">
+                    <div class="layer">
+                        <h3>Disease Prediction Model</h3>
+                        <p>The “Disease Prediction” method, which is concentrated on predictive modeling, it predicts
+                            the user's disease based on the symptoms that the user provides as input. The method
+                            examines the user's symptoms as input and returns the disease's likelihood as an output.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="potato.jpg">
+                    <div class="layer">
+                        <h3>Potato Disease Classification</h3>
+                        <p>This project focuses on applying Convolutional Neural Networks (CNNs) to classify potato
+                            plant leaves into healthy or diseased categories. Using a dataset of potato leaf images, the
+                            model was trained to detect common plant diseases with high accuracy.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/sumitnautiyal681" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--------- contact------------------------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sumitnautiyal681@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instgram.com/_sumit__nautiyal"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/sumitnautiyal681"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://in.linkedin.com/in/sumit-nautiyal-7b9015228"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Sumit Nautiyal Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="validateForm()">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright. Made with by Sumit Nautiyal</p>
+        </div>
+    </div>
+
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
