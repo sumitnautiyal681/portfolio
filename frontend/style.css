@@ -221,7 +221,7 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0px 40px;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
@@ -237,10 +237,10 @@ nav ul li a:hover::after{
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
-    line-height: 60px;
+    line-height: 43px;
     background: #fff;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
 }
@@ -351,7 +351,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 400px){
      .header-text{
         margin-top: 60%;
         font-size: 25px;
@@ -409,14 +409,19 @@ nav .fas{
     }
 
     .layer p{
-        font-size:smaller;
+        font-size:70%;
+        padding: 0 10px;
+            
     }
     .layer h3{
-        font-size: smaller;
+        font-size: 90%;
+        margin-bottom: 8px;
     }
-    
-    
-    
+   
+    .layer a{
+        margin-top: 10px;
+    }
+
 
     .tab-links{
         font-size: 15px;
