@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
@@ -10,7 +11,9 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-
+app.use(cors({
+  origin: "*" // your React dev server
+}));
 // MongoDB connection
 mongoose
   .connect(process.env.MONGO_URI)
@@ -22,7 +25,7 @@ const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
   message: String,
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
 });
 
 const Contact = mongoose.model("Contact", contactSchema);
@@ -36,7 +39,7 @@ app.post("/api/contact", async (req, res) => {
     }
 
     const newContact = new Contact({ name, email, message });
-    await newContact.save(); // <-- actually saves to MongoDB
+    await newContact.save();
 
     res.json({ msg: "Message received successfully!" });
   } catch (err) {
@@ -45,14 +48,16 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-// --- Serve frontend ---
+// --- Serve React frontend ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "../frontend")));
+// Serve static files from React build
+app.use(express.static(path.join(__dirname, "../react-frontend")));
 
+// For any other route, serve index.html
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/index.html"));
+  res.sendFile(path.join(__dirname, "../react-frontend//index.html"));
 });
 
 // Start server
