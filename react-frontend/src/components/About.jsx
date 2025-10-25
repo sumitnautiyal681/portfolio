@@ -74,7 +74,7 @@ const About = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    sumitnautiyal681
+                    _sumit__nautiyal
                   </a>
                 </li>
                 <li>
@@ -94,7 +94,7 @@ const About = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    sumit780
+                    sumit_780
                   </a>
                 </li>
               </ul>
