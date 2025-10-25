@@ -70,7 +70,7 @@ const About = () => {
                 <li>
                   <span>LeetCode</span> <br />
                   <a
-                    href="https://leetcode.com/sumitnautiyal681"
+                    href="https://leetcode.com/u/_sumit__nautiyal/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -90,7 +90,7 @@ const About = () => {
                 <li>
                   <span>CodeChef</span> <br />
                   <a
-                    href="https://www.codechef.com/users/sumit780"
+                    href="https://www.codechef.com/users/sumit_780"
                     target="_blank"
                     rel="noreferrer"
                   >
