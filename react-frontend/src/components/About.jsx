@@ -103,7 +103,7 @@ const About = () => {
             <div className="tab-contents" id="education">
               <ul>
                 <li>
-                  <span>2022 - Current</span>
+                  <span>2021-2025</span>
                   <br /> B.Tech CSE at Graphic Era Hill University
                 </li>
                 <li>
